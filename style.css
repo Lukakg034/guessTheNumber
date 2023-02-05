@@ -1,0 +1,155 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+/* Main color - #e5ba73*/
+/* Main color background - #0C1D22 */
+/* Tint version of background - #556164 */
+/* Tint version of main color - #735d3a
+/* Main gold background color rgb(229, 186, 115) */
+
+body {
+  background-color: #e5ba73;
+  font-family: "Permanent Marker", "Cinzel", sans-serif;
+  font-size: 2.4rem;
+  /* display: flex;
+  flex-direction: column; */
+  height: 100vh;
+  position: relative;
+}
+header {
+  position: relative;
+  height: 50vh;
+  border-bottom: 0.6rem solid #556164;
+}
+h1 {
+  font-size: 5.6rem;
+  position: absolute;
+  left: 50%;
+  top: 35%;
+  transform: translate(-50%, 50%);
+}
+.secret-number {
+  display: block;
+  font-size: 7.2rem;
+  position: absolute;
+  text-align: center;
+  width: 1.5em;
+  height: 1.5em;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #eac98ff3;
+}
+
+.for-login {
+  /* font-family: "Cinzel", sans-serif; */
+  color: #556164;
+}
+.btn {
+  font-family: "Permanent Marker", sans-serif;
+  font-size: 3.2rem;
+  /* padding: 1.5rem 2.5rem; */
+  padding: 0.5em 0.5em;
+  background-color: #eac88f;
+  box-shadow: 2px 9px #17140e;
+}
+.btn:active {
+  box-shadow: 0.5px 5px #2f281d;
+  transform: translateY(2px);
+}
+.btn:hover {
+  cursor: pointer;
+}
+.button-again {
+  position: absolute;
+  left: 50%;
+  top: 15%;
+  transform: translate(-50%, 0);
+}
+.button-again:active {
+  transform: translate(-50%, 2px);
+}
+.between {
+  position: absolute;
+  right: 2%;
+  top: 5%;
+}
+
+main {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  position: absolute;
+}
+.left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.guess {
+  margin-bottom: 5.4rem;
+  /* padding: 2.4rem 2.4rem; */
+  background: transparent;
+  border: 3px dotted;
+  width: 10rem;
+  padding: 2rem;
+  text-align: center;
+  font-family: inherit;
+  font-size: 4rem;
+}
+/* Removing arrows from input field */
+.guess::-webkit-inner-spin-button {
+  display: none;
+}
+.guess::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: auto;
+  border: 2px solid black;
+}
+.message {
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+.button-to-login {
+  font-size: 2.4rem;
+  display: none;
+}
+
+/* TODO Add media queries */
+
+@media (max-width: 1000px) {
+  .btn {
+    font-size: 2rem;
+  }
+  .secret-number {
+    font-size: 5.6rem;
+  }
+  h1 {
+    font-size: 3.2rem;
+  }
+  header {
+    height: 40vh;
+  }
+  main {
+    height: 60vh;
+  }
+}
